@@ -2,6 +2,7 @@ import Navbar from "./components/navbar/navbar";
 import RegisterInterest from "./components/register-interest/register-interest";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./components/home/home";
+import ThankYou from "./components/thank-you/thank-you";
 
 function App() {
   return (
@@ -24,6 +25,13 @@ function App() {
                             image={require("./assets/dark-psychology.png")}
                             description={"A breif introduction to evil. Proceed with caution."}
                         />
+                    }
+                />
+
+                <Route
+                    path="/thank-you"
+                    element={
+                        <ThankYou />
                     }
                 />
             </Routes>
