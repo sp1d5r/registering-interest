@@ -6,3 +6,8 @@
     height: 80vh;
     margin: auto;
 }
+
+.thank-you-image {
+    width: min(90%, 300px);
+    margin: auto;
+}

@@ -29,6 +29,17 @@ function App() {
                 />
 
                 <Route
+                    path="/seduction"
+                    element={
+                        <RegisterInterest
+                            title={"Intro to Seduction"}
+                            image={require("./assets/seduction-2.png")}
+                            description={"Get the person of your dreams and fall in love."}
+                        />
+                    }
+                />
+
+                <Route
                     path="/thank-you"
                     element={
                         <ThankYou />

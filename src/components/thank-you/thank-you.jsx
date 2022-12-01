@@ -7,7 +7,7 @@ function ThankYou() {
             <div>
                 <h1>Thank You!</h1>
                 <p>We'll send you an email confirming your place!</p>
-                <img alt={"Thank you so much!"} src={require("../../assets/thank-you.png")} className={"card-img"}/>
+                <img alt={"Thank you so much!"} src={require("../../assets/thank-you.png")} className={"thank-you-image"}/>
             </div>
         </div>
     )
