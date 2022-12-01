@@ -22,7 +22,7 @@ function FormLocal() {
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Phone Number</Form.Label>
-                    <Form.Control type="number" placeholder="Name" />
+                    <Form.Control type="number" placeholder="Phone Number" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
