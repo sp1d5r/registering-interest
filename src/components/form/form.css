@@ -1,0 +1,18 @@
+.form {
+    width: min(90%, 25rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.button-middle {
+    width: 100%;
+    margin: 20px 10px;
+}
