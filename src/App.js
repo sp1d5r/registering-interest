@@ -1,11 +1,15 @@
 import Navbar from "./components/navbar/navbar";
-import Landing from "./components/landing/landing";
+import RegisterInterest from "./components/register-interest/register-interest";
 
 function App() {
   return (
     <div className="App">
         <Navbar />
-        <Landing />
+        <RegisterInterest
+            title={"Dark Psychology"}
+            image={require("./assets/dark-psychology.png")}
+            description={"A breif introduction to evil. Proceed with caution."}
+        />
     </div>
   );
 }
