@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar/navbar";
 import RegisterInterest from "./components/register-interest/register-interest";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Home from "./components/home/home";
 
 function App() {
   return (
@@ -8,6 +9,13 @@ function App() {
         <div className="App">
             <Navbar />
             <Routes>
+                <Route
+                    path="/"
+                    element={
+                        <Home />
+                    }
+                />
+
                 <Route
                     path="/dark-psychology"
                     element={
