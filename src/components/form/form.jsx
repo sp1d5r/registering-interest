@@ -1,8 +1,11 @@
 import React from "react";
 import "./form.css";
 import {Button, Form} from "react-bootstrap";
+import {useNavigate} from "react-router-dom";
 
 function FormLocal() {
+    const navigate = useNavigate();
+
     return (
         <div className={"form"}>
             <p className={"text"}>Enter your details here!</p>
@@ -28,7 +31,7 @@ function FormLocal() {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Agree to the terms and conditions" />
                 </Form.Group>
-                <Button variant="primary" type="submit" className={"button-middle"}>
+                <Button variant="primary" type="submit" className={"button-middle"} onClick={() => {navigate("/thank-you");}}>
                     Submit
                 </Button>
             </Form>

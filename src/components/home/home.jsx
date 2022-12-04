@@ -7,7 +7,7 @@ function Home() {
             <div>
                 <h1>How did you get here?</h1>
                 <p>Nothing to see here. Run along now...</p>
-                <a href={"/courses"}>or persist</a>
+                <a href={"/courses"}>Or keep exploring...</a>
             </div>
         </div>
     )
