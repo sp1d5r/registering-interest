@@ -18,3 +18,8 @@ code {
   padding: 20px 0px;
   margin: 0;
 }
+
+a {
+  color: black;
+  text-decoration: none;
+}
