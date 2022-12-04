@@ -3,6 +3,8 @@ import RegisterInterest from "./components/register-interest/register-interest";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./components/home/home";
 import ThankYou from "./components/thank-you/thank-you";
+import Courses from "./components/courses/courses";
+import course_options from "./course-click";
 
 function App() {
   return (
@@ -18,26 +20,26 @@ function App() {
                 />
 
                 <Route
-                    path="/dark-psychology"
+                    path="/courses"
                     element={
-                        <RegisterInterest
-                            title={"Dark Psychology"}
-                            image={require("./assets/dark-psychology.png")}
-                            description={"A breif introduction to evil. Proceed with caution."}
-                        />
+                        <Courses />
                     }
                 />
 
-                <Route
-                    path="/seduction"
-                    element={
-                        <RegisterInterest
-                            title={"Intro to Seduction"}
-                            image={require("./assets/seduction-2.png")}
-                            description={"Get the person of your dreams and fall in love."}
+                {
+                    course_options.map((item) => {
+                        return <Route
+                            path={item.route}
+                            element={
+                                <RegisterInterest
+                                    title={item.title}
+                                    image={item.image}
+                                    description={item.description}
+                                />
+                            }
                         />
-                    }
-                />
+                    })
+                }
 
                 <Route
                     path="/thank-you"
