@@ -9,7 +9,7 @@ function RegisterInterest({image, title, description}) {
         <>
             <RainbowText />
             <CourseCard image={image} title={title} description={description}/>
-            <FormLocal />
+            <FormLocal title={title}/>
         </>
     );
 }

@@ -5,8 +5,13 @@ import Home from "./components/home/home";
 import ThankYou from "./components/thank-you/thank-you";
 import Courses from "./components/courses/courses";
 import course_options from "./course-click";
+import analytics, {sendForm, setUserIdFirst} from "./cloud-infrastructure/firebase";
+import { setUserId } from "firebase/analytics";
+
 
 function App() {
+    setUserId(analytics, "isdjknkrjn")
+    setUserIdFirst();
   return (
       <BrowserRouter>
         <div className="App">
