@@ -3,3 +3,11 @@
     margin: auto;
     margin-top: 5%;
 }
+
+.courses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: max(80%, 25rem);
+    justify-content: space-evenly;
+}
