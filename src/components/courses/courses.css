@@ -8,6 +8,6 @@
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    width: max(80%, 25rem);
+    width: max(80%, 22rem);
     justify-content: space-evenly;
 }
