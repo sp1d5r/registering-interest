@@ -57,13 +57,13 @@ const course_options = [
     {
         route: "/steve-jobs",
         title: "Steve Jobs",
-        image: require("./assets/relax.png"), //TODO
+        image: require("./assets/cast-study.png"), //TODO
         description: "Learn the psychological tricks from the master in this case study!"
     },
     {
         route: "/jeffery-dahmer",
         title: "Jeffery Dahmer",
-        image: require("./assets/relax.png"), //TODO
+        image: require("./assets/cast-study.png"), //TODO
         description: "Learn about the psychology of this criminal to protect yourself!"
     },
     {
