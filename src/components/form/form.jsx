@@ -9,7 +9,6 @@ function FormLocal({title}) {
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
-    const [checked, setChecked] = useState(false);
     const [error, setError] = useState("");
 
     function validEmail()
@@ -26,19 +25,15 @@ function FormLocal({title}) {
 
 
     const sendForm = () => {
-        if (validEmail()) {
-            if (checked) {
-                sendFormDetail(email, name, phoneNumber, title).then(() => {
-                    navigate("/thank-you");
-                })
-            } else {
-                setError(["Please Agree to the terms and conditions"])
-            }
+        if (validEmail()){
+            sendFormDetail(email, name, phoneNumber, title).then(() => {
+                navigate("/thank-you");
+            })
         }
     }
 
     return (
-        <div className={"form"}>
+        <div className={"form"} style={{marginBottom: "5%"}}>
             {
                 error.length > 0 && <Alert variant={"danger"} className={"alert-div"}>
                     <b>There are a few errors on your forum</b>
@@ -53,7 +48,7 @@ function FormLocal({title}) {
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email Address *</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" onChange={(e) => {setEmail(e.target.value)}}/>
+                    <Form.Control type="email" placeholder="Enter email (Required)" onChange={(e) => {setEmail(e.target.value)}}/>
                     <Form.Text className="text-muted">
                         We'll send you the free access token to this email!
                     </Form.Text>
@@ -61,20 +56,18 @@ function FormLocal({title}) {
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Name *</Form.Label>
-                    <Form.Control type="text" placeholder="Name" onChange={(e) => {setName(e.target.value)}}/>
+                    <Form.Control type="text" placeholder="Name (Optional)" onChange={(e) => {setName(e.target.value)}}/>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Phone Number</Form.Label>
-                    <Form.Control type="tel" placeholder="Phone Number" onChange={(e) => {setPhoneNumber(e.target.value)}}/>
+                    <Form.Control type="tel" placeholder="Phone Number (Optional)" onChange={(e) => {setPhoneNumber(e.target.value)}}/>
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Agree to the terms and conditions" onChange={(_) => {setChecked(!checked); }}/>
-                </Form.Group>
-                <Button variant="primary"  className={"button-middle"} onClick={(e) => {sendForm(); console.log(checked)}}>
+                <Button variant="primary"  className={"button-middle"} onClick={(e) => {sendForm();}}>
                     Submit
                 </Button>
+
             </Form>
         </div>
     )
