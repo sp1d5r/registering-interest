@@ -1,16 +1,17 @@
 import React from "react";
-import "./home.css";
+import Spotlight from "./spotlight/Spotlight";
+import SpotlightReveal from "./spotlight-reveal/SpotlightReveal";
+import SpotlightMask from "./spotlight-mask/SpotlightMask";
 
-function Home() {
+const Home = () => {
     return (
         <div className={"home"}>
-            <div>
-                <h1>How did you get here?</h1>
-                <p>Nothing to see here. Run along now...</p>
-                <a href={"/courses"}>Or keep exploring...</a>
-            </div>
+            <SpotlightMask
+                defaultChildren={<p>Default text or component</p>}
+                hiddenChildren={<button>Hidden button</button>}
+            />
         </div>
-    )
-}
+    );
+};
 
 export default Home;
