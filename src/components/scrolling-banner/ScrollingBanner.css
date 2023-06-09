@@ -1,0 +1,21 @@
+.banner {
+    height: 10vh;
+    overflow: hidden;
+}
+
+.scrolling-text {
+    font-size: 1.5rem;
+    fill: #ffffff;
+    animation: scroll 15s linear infinite;
+    white-space: nowrap;
+    animation-delay: 2s; /* Add a delay before the animation starts */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

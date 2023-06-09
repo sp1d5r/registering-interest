@@ -36,6 +36,13 @@ section h1 {
     transition: clip-path 100ms;
 }
 
+.behind-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 .hover-btn,
 .hover-btn2 {
     width: 60px;

@@ -1,0 +1,105 @@
+.corner-outline {
+    width: 90vw;
+    height: 80vh;
+    position: relative;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+}
+
+.corner-outline:before,
+.corner-outline:after {
+    content: '';
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    border: 2px solid #000000;
+    background-color: transparent;
+}
+
+.corner-outline:before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.corner-outline:after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+/* Sale Banner Top */
+
+
+/* Main Div */
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 56px;
+    font-family: 'Lexend';
+    color: black;
+}
+
+section {
+    padding: 0px;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 62px;
+    /* identical to box height */
+    color: #000000;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* Text Outline */
+    text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
+}
+
+/* Register Button */
+
+.reg-button {
+    outline: none;
+    padding: 15px;
+    border-radius: 2px;
+    border: 2px solid black;
+    background: #7BE295;
+}
+
+/* Email Input */
+
+.email-input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+    width: 30%;
+}
+
+.primaryApp, .secondaryApp {
+    background-color: #7BE295;
+    background-image: url("../../assets/contour-map.svg");
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondaryApp {
+    background-color: white;
+    background-image: url("../../assets/contour-map.svg");
+}
+
+.secondaryButton {
+    background-color: white;
+}
