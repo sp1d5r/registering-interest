@@ -1,6 +1,6 @@
 .corner-outline {
     width: 90vw;
-    height: 85vh;
+    min-height: 85vh;
     position: relative;
     margin-top: 10vh;
     margin-left: 5vw;
@@ -77,11 +77,11 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 20px;
-    gap: 56px;
     font-family: 'Lexend', serif;
     color: black;
+    gap: 25px;
 }
 
 section {
@@ -114,7 +114,7 @@ section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 /* Email Input */
