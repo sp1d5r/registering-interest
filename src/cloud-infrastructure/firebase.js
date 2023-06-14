@@ -81,6 +81,13 @@ export async function sendFormDetail(email, name, number, course_title){
     }
 }
 
-
+export async function registerInterest(email){
+    try {
+        const docRef = await addDoc(collection(db, "register-interest"), {email: email, info: user_id});
+        console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+        console.error("Error adding document: ", e);
+    }
+}
 
 console.log(info)
