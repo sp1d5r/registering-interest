@@ -68,6 +68,12 @@ const SpotlightMask = () => {
                     <>
                         <div className={"thank-you-div"}>
                             <h1 className={"thank-you-title"}>Thank you!</h1>
+
+                            <b className={"thank-you-body"}>
+                                {email}
+                            </b>
+
+
                             <p className={"thank-you-body"}>
                                 Well done on taking the initiative and registering to conventa.
                             </p>
@@ -77,9 +83,9 @@ const SpotlightMask = () => {
                                 professional life.
                             </p>
 
-                            <b className={"thank-you-body"}>
+                            <p className={"thank-you-body"}>
                                 When we're ready to help - we'll email you
-                            </b>
+                            </p>
                         </div>
                     </>
                 }
