@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './SpotlightMask.css';
 import RegisterInterest from "../../register-interest/RegisterInterest";
+import {registerInterest} from "../../../cloud-infrastructure/firebase";
 
 const SpotlightMask = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +17,7 @@ const SpotlightMask = () => {
 
     const handleClick = () => {
         setButtonAnimation(true);
+        registerInterest(email);
         setTimeout(() => setButtonAnimation(false), 1000); // Reset animation after 1 second
         setIsOpen(!isOpen);
     };
@@ -72,7 +74,6 @@ const SpotlightMask = () => {
                             <b className={"thank-you-body"}>
                                 {email}
                             </b>
-
 
                             <p className={"thank-you-body"}>
                                 Well done on taking the initiative and registering to conventa.
