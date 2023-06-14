@@ -1,12 +1,12 @@
 import React, {useEffect} from "react";
 import "./RegisterInterest.css"
 
-export default function RegisterInterest({isPrimary, handleInputChange, email}) {
+export default function RegisterInterest({isPrimary, handleInputChange, email, continueButton}) {
 
     return (
         <div className={isPrimary ? "primaryApp" : "secondaryApp"} style={{ backgroundImage: "url(http://localhost:3000/static/media/contour-map.a7c48995b60fd370e8d8.svg)"}}>
         <div className="corner-outline main-div">
-            <h1 className={"title"}>Unlock Your Potential, Master Your Mind</h1>
+            <h1 className={"title"}>Unlock Your Potential. Master Your Mind.</h1>
             <div>
                 <p>Everybody knows that one person who effortlessly achieves success</p>
                 <p>Don't let them pass you by.</p>
@@ -25,6 +25,7 @@ export default function RegisterInterest({isPrimary, handleInputChange, email}) 
                 className={"reg-button"}
             >
                 Register your Interest
+                {continueButton}
             </button>
         </div>
         </div>

@@ -41,6 +41,7 @@ section h1 {
     top: 0;
     left: 0;
     width: 100%;
+    background-color: #7BE295;
 }
 
 .hover-btn,
@@ -51,12 +52,18 @@ section h1 {
     background: white;
     display: flex;
     cursor: pointer;
+    border: 1px solid black
+}
+
+.hover-btn2 {
+    border: 2px solid black;
+    background-color: #c4f1d0;
 }
 
 .hover-btn svg,
 .hover-btn2 svg {
     margin: 1em;
-    fill: rgb(227, 255, 234);
+    fill: black;
 }
 
 .is-open {
@@ -82,4 +89,37 @@ section h1 {
     /* Add your animation styles here */
     transform: scale(0.95);
     transition: transform 0.2s ease-in-out;
+}
+
+.thank-you-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 62px;
+    /* identical to box height */
+    color: #000000;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* Text Outline */
+    text-shadow: none;
+}
+
+.thank-you-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thank-you-body {
+    width: min(400px, 80%);
+    margin: 10px;
+    font-family: "Lexend", serif;
+    color: black;
+    text-align: center;
 }
