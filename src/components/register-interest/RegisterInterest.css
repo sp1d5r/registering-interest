@@ -44,13 +44,15 @@
 }
 
 input:focus {
-    outline: none;
     outline: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 5px;
     background: #7BE295;
 
 }
 
 input {
+    padding: 5px;
     outline: 2px solid black;
     background: #7BE295;
 }
