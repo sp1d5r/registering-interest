@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import "./RegisterInterest.css"
 
-export default function RegisterInterest({isPrimary, handleInputChange, email, continueButton}) {
+export default function RegisterInterest({isPrimary, handleInputChange, handleClick, email, continueButton}) {
 
     return (
         <div className={isPrimary ? "primaryApp" : "secondaryApp"} style={{ backgroundImage: "url(http://localhost:3000/static/media/contour-map.a7c48995b60fd370e8d8.svg)"}}>
@@ -23,6 +23,7 @@ export default function RegisterInterest({isPrimary, handleInputChange, email, c
 
             <button
                 className={"fade-in reg-button"}
+                onClick={handleClick}
             >
                 Register your Interest
                 {continueButton}
